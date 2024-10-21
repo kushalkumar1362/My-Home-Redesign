@@ -141,6 +141,7 @@ const Navbar = () => {
                       setOrganisationOpen(false)
                       setBoardOpen(false)
                       setContactOpen(true)
+                      setProfileOpen((prev) => !prev)
                     }}
                   >
                     Contacts
@@ -154,6 +155,7 @@ const Navbar = () => {
                       setOrganisationOpen(false)
                       setBoardOpen(false)
                       setProjectsOpen(true)
+                      setProfileOpen((prev) => !prev)
                     }}
                   >Projects</p>
 
@@ -165,6 +167,7 @@ const Navbar = () => {
                     setOrganisationOpen(false)
                     setBoardOpen(false)
                     setAlbumsOpen(true)
+                    setProfileOpen((prev) => !prev)
                   }}
                 >Albums</li>
                 <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
@@ -174,6 +177,7 @@ const Navbar = () => {
                     setAlbumsOpen(false)
                     setBoardOpen(false)
                     setOrganisationOpen(true)
+                    setProfileOpen((prev) => !prev)
                   }}
                 >Organisations</li>
                 <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
@@ -183,6 +187,7 @@ const Navbar = () => {
                     setAlbumsOpen(false)
                     setOrganisationOpen(false)
                     setBoardOpen(true)
+                    setProfileOpen((prev) => !prev)
                   }}
                 >Boards</li>
               </ul>
