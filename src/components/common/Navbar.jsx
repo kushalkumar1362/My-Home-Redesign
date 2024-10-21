@@ -87,7 +87,7 @@ const Navbar = () => {
 
       {/* Right Section (Icons & Profile) */}
       <div className=" flex justify-between w-full lg:w-fit items-center space-x-2 md:space-x-8 text-xl flex-wrap mt-4 lg:mt-0">
-        <div className="text-gray-700 hover:text-gray-900  hover:bg-[#bad6f3] px-4 py-2 rounded-lg transition duration-300 ease-in-out"
+        <div className="text-gray-700 hover:text-gray-900 hidden sm:block hover:bg-[#bad6f3] px-4 py-2 rounded-lg transition duration-300 ease-in-out"
           onClick={() => {
             setAlbumsOpen(false)
             setProjectsOpen(false)
@@ -132,6 +132,20 @@ const Navbar = () => {
           {isProfileOpen && (
             <div className="absolute right-0 w-40 max-w-48 bg-white border rounded shadow-lg z-10">
               <ul className="py-2">
+                <li className="px-4 py-2 hover:bg-gray-100 sm:hidden cursor-pointer">
+
+                  <p
+                    onClick={() => {
+                      setAlbumsOpen(false)
+                      setProjectsOpen(false)
+                      setOrganisationOpen(false)
+                      setBoardOpen(false)
+                      setContactOpen(true)
+                    }}
+                  >
+                    Contacts
+                  </p>
+                </li>
                 <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                   <p
                     onClick={() => {
